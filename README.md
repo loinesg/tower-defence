@@ -18,7 +18,7 @@ is stronger than the last, with enemies avoiding player-placed obstacles and tak
 - Run main.py
 
 ## Screenshots
-<img src="tower-defence-4.jpg" width="49%" />
-<img src="tower-defence-1.jpg" width="49%" />
-<img src="tower-defence-2.jpg" width="49%" />
-<img src="tower-defence-3.jpg" width="49%" />
+<img src="https://raw.githubusercontent.com/loinesg/tower-defence/master/tower-defence-4.jpg" width="49%" />
+<img src="https://raw.githubusercontent.com/loinesg/tower-defence/master/tower-defence-1.jpg" width="49%" />
+<img src="https://raw.githubusercontent.com/loinesg/tower-defence/master/tower-defence-2.jpg" width="49%" />
+<img src="https://raw.githubusercontent.com/loinesg/tower-defence/master/tower-defence-3.jpg" width="49%" />
