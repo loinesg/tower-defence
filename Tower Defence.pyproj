@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f584a428-dedd-4119-a358-45e69c4c1621}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>main.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>3.3</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <Name>Tower Defence</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="core\bullet.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="core\enemy.py" />
+    <Compile Include="core\explosion.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="core\collision.py" />
+    <Compile Include="core\game.py" />
+    <Compile Include="core\level.py" />
+    <Compile Include="core\menu.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="core\pathfinding.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="core\prefab.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="core\leaderboard.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="core\defence.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="core\wave.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="core\window.py" />
+    <Compile Include="main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="levels\basic.jpg" />
+    <Content Include="levels\basic.level">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="levels\basic_h.jpg" />
+    <Content Include="levels\maze.jpg" />
+    <Content Include="levels\maze_h.jpg" />
+    <Content Include="levels\path.jpg" />
+    <Content Include="levels\path.level" />
+    <Content Include="levels\path_h.jpg" />
+    <Content Include="levels\README.txt" />
+    <Content Include="prefabs\defence_flash.prefab" />
+    <Content Include="prefabs\attack_explosion.prefab" />
+    <Content Include="prefabs\attack_bullet.prefab">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="prefabs\enemy_large.prefab" />
+    <Content Include="prefabs\enemy_medium.prefab" />
+    <Content Include="prefabs\enemy_small.prefab">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="prefabs\level_test.prefab">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="prefabs\menu_how_to_play.prefab" />
+    <Content Include="prefabs\menu.prefab" />
+    <Content Include="prefabs\menu_defence_button.prefab" />
+    <Content Include="prefabs\menu_pause_button.prefab" />
+    <Content Include="prefabs\menu_level_path.prefab" />
+    <Content Include="prefabs\menu_level_maze.prefab" />
+    <Content Include="prefabs\menu_level_basic.prefab" />
+    <Content Include="prefabs\menu_button.prefab">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="prefabs\defence_mines.prefab" />
+    <Content Include="prefabs\defence_artillery.prefab" />
+    <Content Include="prefabs\defence_wall.prefab" />
+    <Content Include="prefabs\README.txt" />
+    <Content Include="psd\attack_bullet.psd" />
+    <Content Include="psd\defence_flash-0.psd" />
+    <Content Include="psd\defence_flash-1.psd" />
+    <Content Include="psd\enemy_large.psd" />
+    <Content Include="psd\enemy_medium.psd" />
+    <Content Include="psd\enemy_small.psd" />
+    <Content Include="psd\attack_explosion-1.psd" />
+    <Content Include="psd\attack_explosion-2.psd" />
+    <Content Include="psd\attack_explosion-3.psd" />
+    <Content Include="psd\attack_explosion-0.psd" />
+    <Content Include="psd\menu.psd" />
+    <Content Include="psd\menu_button.psd" />
+    <Content Include="psd\menu_button_h.psd" />
+    <Content Include="psd\menu_how_to_play.psd" />
+    <Content Include="psd\menu_pause_button.psd" />
+    <Content Include="psd\menu_pause_button_h.psd" />
+    <Content Include="psd\menu_defence_button.psd" />
+    <Content Include="psd\menu_defence_button_d.psd" />
+    <Content Include="psd\menu_defence_button_h.psd" />
+    <Content Include="psd\defence_artillery.psd" />
+    <Content Include="psd\defence_mines.psd" />
+    <Content Include="README.txt" />
+    <Content Include="textures\block_background.jpg" />
+    <Content Include="prefabs\block_background.prefab" />
+    <Content Include="textures\block_medium.jpg" />
+    <Content Include="prefabs\block_medium.prefab" />
+    <Content Include="psd\block_medium.psd" />
+    <Content Include="textures\block_small.jpg" />
+    <Content Include="prefabs\block_small.prefab" />
+    <Content Include="psd\block_small.psd" />
+    <Content Include="prefabs\defence_pillbox.prefab">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="levels\maze.level" />
+    <Content Include="textures\attack_bullet.png" />
+    <Content Include="textures\defence_flash-0.png" />
+    <Content Include="textures\defence_flash-1.png" />
+    <Content Include="textures\enemy_large.png" />
+    <Content Include="textures\enemy_medium.png" />
+    <Content Include="textures\enemy_small.png" />
+    <Content Include="textures\attack_explosion-0.png" />
+    <Content Include="textures\attack_explosion-1.png" />
+    <Content Include="textures\attack_explosion-2.png" />
+    <Content Include="textures\attack_explosion-3.png" />
+    <Content Include="textures\menu.png" />
+    <Content Include="textures\menu_button.png" />
+    <Content Include="textures\menu_button_h.png" />
+    <Content Include="textures\menu_how_to_play.jpg" />
+    <Content Include="textures\menu_pause_button.png" />
+    <Content Include="textures\menu_pause_button_h.png" />
+    <Content Include="textures\menu_defence_button.png" />
+    <Content Include="textures\menu_defence_button_d.png" />
+    <Content Include="textures\menu_defence_button_h.png" />
+    <Content Include="textures\defence_artillery.png" />
+    <Content Include="textures\defence_mines.png" />
+    <Content Include="textures\defence_pillbox.png" />
+    <Content Include="psd\defence_pillbox.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="core" />
+    <Folder Include="levels\" />
+    <Folder Include="psd\" />
+    <Folder Include="prefabs\" />
+    <Folder Include="textures" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.3" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
