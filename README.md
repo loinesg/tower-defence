@@ -14,7 +14,7 @@ is stronger than the last, with enemies avoiding player-placed obstacles and tak
 
 ## How To Run
 - Install Python 3 and Pygame (tested with Python 3.2 and Pygame 1.9.2)
-- Fetch the project
+- Clone the project, or download a .zip and extract all files
 - Run main.py
 
 ## Screenshots
