@@ -13,7 +13,7 @@ A tower defence game, where the player must place defences to stop waves of enem
 is stronger than the last, with enemies avoiding player-placed obstacles and taking multiple routes to reach the finish.
 
 ## How To Run
-- Install Python 3 and Pygame (tested with Python 3.2 and Pygame 1.9.2)
+- Install Python 3 and Pygame (tested with [Python 3.2 32 bit](https://www.python.org/ftp/python/3.2) and [PyGame 1.9.2](http://www.pygame.org/download.shtml))
 - Clone the project, or download a .zip and extract all files
 - Run main.py
 
