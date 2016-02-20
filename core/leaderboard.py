@@ -28,7 +28,7 @@ class Leaderboard:
         """
         Constructor.
         """
-        self.application_url = "https://pygame-api.azure-mobile.net/tables/scoreboardentry"
+        self.application_url = "http://gl-tower-defence.azurewebsites.net/tables/scoreboardentry"
         self.application_headers = {"x-zumo-application": "cwrbABoHBGWKMhIiHrkVChWHoDcmAa78"}
         self.entries = []
 
@@ -37,7 +37,7 @@ class Leaderboard:
         Updates the leaderboard from the REST api.
         """
         try:
-            request = urllib.request.Request(self.application_url, headers=self.application_headers, method="GET")
+            request = urllib.request.Request(self.application_url, headers=self.application_headers)
             response = urllib.request.urlopen(request)
         
             raw = response.read().decode()
@@ -47,7 +47,7 @@ class Leaderboard:
             self.entries.sort(key = lambda e: e.score, reverse = True)
         
         except:
-            data = None
+            print("Error downloading leaderboard")
 
     def add(self, level, name, score, wave):
         """
@@ -65,7 +65,7 @@ class Leaderboard:
             raw = {"level": level, "name": name, "score": score, "wave": wave}
             data = json.dumps(raw).encode()
 
-            request = urllib.request.Request(self.application_url, data, self.application_headers, method = "POST")
+            request = urllib.request.Request(self.application_url, data, self.application_headers)
             request.add_header("Content-Type", "application/json")
             request.add_header("Content-Length", len(data))
             response = urllib.request.urlopen(request)
